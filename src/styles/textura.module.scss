@@ -1,0 +1,37 @@
+.grao {
+  position: relative;
+  background-image:
+    radial-gradient(rgba(0, 0, 0, 0.035) 1px, transparent 1px),
+    radial-gradient(rgba(0, 0, 0, 0.02) 1px, transparent 1px);
+  background-size: 3px 3px, 7px 7px;
+  background-position: 0 0, 2px 3px;
+}
+
+.selo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px dashed currentColor;
+  border-radius: 999px;
+  transform: rotate(-6deg);
+  letter-spacing: 0.04em;
+}
+
+.cardHover {
+  transition: transform 240ms ease, box-shadow 240ms ease;
+
+  &:hover,
+  &:focus-within {
+    transform: translateY(-4px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cardHover {
+    transition: none;
+    &:hover,
+    &:focus-within {
+      transform: none;
+    }
+  }
+}

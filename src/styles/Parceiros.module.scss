@@ -1,0 +1,32 @@
+.container {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 5%;
+}
+
+.animateScroll {
+  display: flex;
+  width: max-content;
+  gap: 2.5rem;
+  animation: scroll 25s linear infinite;
+}
+
+.animateScroll img {
+  flex-shrink: 0;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-50% - 1.25rem));
+  }
+}
+
+@media (max-width: 768px) {
+  .animateScroll {
+    animation-duration: 14s;
+  }
+}
