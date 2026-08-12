@@ -7,8 +7,10 @@ import dtalia from "../assets/logo-parceiros/dtalia.png";
 import stier from "../assets/logo-parceiros/stier.png";
 import mazutti from "../assets/logo-parceiros/mazutti.png";
 import plenno from "../assets/logo-parceiros/plenno_.svg";
+import pol from "../assets/logo-parceiros/pol.png";
+import ccgl from "../assets/logo-parceiros/ccgl.png";
 
-const parceiros = [frutap, mineirinho, tupy, vabene, dtalia, stier, mazutti, plenno];
+const parceiros = [frutap, mineirinho, tupy, vabene, dtalia, stier, mazutti, plenno, pol, ccgl];
 
 export default function Parceiros() {
   return (

@@ -23,7 +23,7 @@ export default function Produtos({aoTrocarAba}) {
 
   // Departamentos — carrega uma vez
   useEffect(() => {
-    api.getData("/departments").then(setDepartamentos).catch(console.error);
+    api.getData("/departments/").then(setDepartamentos).catch(console.error);
   }, []);
 
   // Categorias — recarrega ao trocar de departamento
