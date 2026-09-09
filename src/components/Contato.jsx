@@ -147,6 +147,36 @@ export default function Contato() {
                   </div>
                   <div>
                     <label
+                      htmlFor="cidade"
+                      className="mb-1.5 block text-sm font-medium"
+                    >
+                      Cidade
+                    </label>
+                    <input
+                      id="cidade"
+                      name="cidade"
+                      type="text"
+                      required
+                      className="w-full rounded-xl border border-grafite/15 bg-white px-4 py-2.5 text-sm outline-none focus:border-campeiro-400 "
+                    />
+                  </div>
+                  <div>
+                    <label
+                      htmlFor="telefone"
+                      className="mb-1.5 block text-sm font-medium"
+                    >
+                      Telefone
+                    </label>
+                    <input
+                      id="telefone"
+                      name="telefone"
+                      type="text"
+                      required
+                      className="w-full rounded-xl border border-grafite/15 bg-white px-4 py-2.5 text-sm outline-none focus:border-campeiro-400 "
+                    />
+                  </div>
+                  <div>
+                    <label
                       htmlFor="mensagem"
                       className="mb-1.5 block text-sm font-medium"
                     >
